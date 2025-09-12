@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 
+
+//this will match all the HTTP method API calls to /test
 app.use("/test", (req, res) => {
     res.send("This is a test!");
 });
